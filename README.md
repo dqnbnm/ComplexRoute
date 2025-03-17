@@ -1,4 +1,4 @@
-Проект: 
+Axenix: путешествия легко
 ===
 Описание проекта:
 ===
@@ -56,7 +56,8 @@ stations_list.json|
 * Профиль клиент.png - экран личного кабинета
 * построить маршрут.png - экран построения маршрута
 * найденные маршруты.png - экран представления найденных маршрутов
-  
-<img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/Профиль%20клиент.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/построить%20маршрут.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/найденные%20маршруты.png" width="135" height="293">
+* подробнее.png - экран подробного описания пути
+<img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/Профиль%20клиент.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/построить%20маршрут.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/найденные%20маршруты.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5.png" width="135" height="293">
+
 
 ### Тут что-то про цены бла бла
