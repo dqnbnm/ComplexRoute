@@ -50,7 +50,6 @@ stations_list.json|
 ### Основной функционал
 * Построение маршрутов
 * Сортировка билетов
-* Анализ цен с использованием внешних API
 
 ### Дизайн приложения
 **Дизайн интерфейса можно найти в следующих файлах (полный набор изображений находится в папке Axenix Design):**
@@ -59,3 +58,5 @@ stations_list.json|
 * найденные маршруты.png - экран представления найденных маршрутов
   
 <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/Профиль%20клиент.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/построить%20маршрут.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/найденные%20маршруты.png" width="135" height="293">
+
+### Тут что-то про цены бла бла
