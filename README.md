@@ -58,6 +58,4 @@ stations_list.json|
 * построить маршрут.png - экран построения маршрута
 * найденные маршруты.png - экран представления найденных маршрутов
   
-<img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/Профиль%20клиент.png" width="135" height="293">
-<img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/построить%20маршрут.png" width="135" height="293">
-<img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/найденные%20маршруты.png" width="135" height="293">
+<img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/Профиль%20клиент.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/построить%20маршрут.png" width="135" height="293"> <img src="https://raw.githubusercontent.com/dqnbnm/ComplexRoute/main/Axenix%20Design/найденные%20маршруты.png" width="135" height="293">
