@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def dictAllStation(api_key):
     # Создание словаря с названиями городов и их кодами
     with open('stations_list.json', 'r') as fcc_file:
@@ -15,6 +16,7 @@ def dictAllStation(api_key):
                 if title and code:
                     city_code_dict[title] = code
     return city_code_dict
+
 
 def cord_stations(api_key):
     with open('stations_list.json', 'r') as fcc_file:

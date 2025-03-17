@@ -1,13 +1,14 @@
 import requests
-from dateutil.parser import parse # для преобразования строк в дату и время формата datetime
+from dateutil.parser import parse  # для преобразования строк в дату и время формата datetime
 import datetime
 
-def scheduling(api_key, city_from, city_to, date, city_code_dict, transfer_true, cord_stations): # функция для подсчета всеозвожных маршрутов
+
+def scheduling(api_key, city_from, city_to, date, city_code_dict, transfer_true,
+               cord_stations):  # функция для подсчета всеозвожных маршрутов
     url = "https://api.rasp.yandex.net/v3.0/search/"
     flag = "false"
     if transfer_true == 1:
         flag = "true"
-
 
     params = {
         "apikey": api_key,
@@ -38,9 +39,9 @@ def scheduling(api_key, city_from, city_to, date, city_code_dict, transfer_true,
         # Составление словаря с информацией о рейсах
         way_info = {}
         index = 0
-        #print(shedule)
+        # print(shedule)
         for segment in shedule['segments']:
-            #print(segment)
+            # print(segment)
             if not segment['has_transfers']:
                 way_info[index] = {"Title": segment['thread']['title'], "From": segment['from']['title'],
                                    "To": segment['to']['title'],
@@ -52,7 +53,7 @@ def scheduling(api_key, city_from, city_to, date, city_code_dict, transfer_true,
                                    "longitude_to": cord_stations[segment['to']['code']]['longitude'],
                                    "latitude_from": cord_stations[segment['from']['code']]['latitude'],
                                    "latitude_to": cord_stations[segment['to']['code']]['latitude']}
-                                   #"Cost": segment['tickets_info']['places']}
+                # "Cost": segment['tickets_info']['places']}
             else:
                 way_info[index] = {}
                 i = 0
@@ -69,11 +70,12 @@ def scheduling(api_key, city_from, city_to, date, city_code_dict, transfer_true,
                         i += 1
                 way_info[index]['Departure'] = way_info[index]['Departure0']
                 way_info[index]['Arrival'] = way_info[index][f'Arrival{i - 1}']
-                way_info[index]['Duration'] = (parse(way_info[index]['Arrival']) - parse(way_info[index]['Departure'])).total_seconds()
+                way_info[index]['Duration'] = (
+                            parse(way_info[index]['Arrival']) - parse(way_info[index]['Departure'])).total_seconds()
                 way_info[index]['Transfers'] = i
                 way_info[index]['It_transfer'] = 1
 
-            #else:
+            # else:
 
             index += 1
     else:
@@ -82,14 +84,18 @@ def scheduling(api_key, city_from, city_to, date, city_code_dict, transfer_true,
 
     return way_info
 
-def getDeparture(way_info, i): # функция для возврата времени Отправления
+
+def getDeparture(way_info, i):  # функция для возврата времени Отправления
     return way_info[i]["Departure"]
 
-def getArrival(way_info, i): # функция для возврата времени прибытия
+
+def getArrival(way_info, i):  # функция для возврата времени прибытия
     return way_info[i]["Arrival"]
 
-def getDuration(way_info, i): # функция для возврата длительности
+
+def getDuration(way_info, i):  # функция для возврата длительности
     return way_info[i]["Duration"]
 
-def getCost(way_info, i): # функция для возврата стоимости
+
+def getCost(way_info, i):  # функция для возврата стоимости
     return way_info[i]["Cost"]
