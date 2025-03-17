@@ -86,7 +86,7 @@ python MainFile.py
 | get_travel_distance  | Аналогичная функция, только рассчитывает расстояние между локациями в метрах  |
 
 Данные функции хранятся в файле 2gisTimeAndDistance в папке Подсчет цен
-<img src = "https://github.com/dqnbnm/ComplexRoute/blob/main/Подсчет%20цен/image.png" width="300">
+<img src = "https://github.com/dqnbnm/ComplexRoute/blob/main/Подсчет%20цен/image.png" width="600">
 
 ### Содержание файлов
 Название    | Содержание 
